@@ -3,13 +3,14 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: JIABAO HU (胡嘉宝)
-subtitle: ''
-description: ''
+title: JIABAO HU 
+subtitle: '胡嘉宝'
+description: 'ZJUI Undergraduate Class 2023'
 keywords:
 author: Jiabao Hu
 language: en
 timezone: ''
+email: hujiabao1224@gmail.com, jiabaoh2@illinios.edu, jiabao.19@intl.zju.edu.cn
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
