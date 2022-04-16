@@ -13,4 +13,4 @@ I am a big fan of classical music and also other kinds of music:musical_note:. T
 
 In my spare time, I also try to compose some simple songs, which can be found on my [musician page](https://music.163.com/#/artist?id=35422348):musical_keyboard:.
 ***
-This blog is for sharing ideas when I am learning something, such as algorithm, JavaScript, Music Theory as well as  courses' other notes.
+This blog is for sharing ideas when I am learning something, such as algorithm, JavaScript, Music Theory as well as other courses' notes.
