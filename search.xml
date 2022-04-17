@@ -73,8 +73,7 @@
   <entry>
     <title>Blender-Python API Meshing (1)</title>
     <url>/2022/04/16/blender-python-meshing-1/</url>
-    <content><![CDATA[<p>[toc]</p>
-<h1>Blender-Python API Meshing</h1>
+    <content><![CDATA[<h1>Blender-Python API Meshing</h1>
 <h2 id="Introduction">Introduction</h2>
 <ul>
 <li>Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, virtual reality, and, formerly, video games.</li>
