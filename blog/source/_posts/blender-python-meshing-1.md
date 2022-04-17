@@ -4,6 +4,7 @@ date: 2022-04-16 19:29:34
 tags: [Blender, Python, Modelling]
 categories: Blender
 cover: https://upload.wikimedia.org/wikipedia/commons/3/3c/Logo_Blender.svg
+# katex: true
 ---
 # Blender-Python API Meshing
 ## Introduction
