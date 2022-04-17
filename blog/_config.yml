@@ -118,35 +118,55 @@ search:
   format: html
   
 
-# githubEmojis:
+githubEmojis:
+  enable: true
+  className: github-emoji
+  inject: true
+  styles:
+  customEmojis:
+
+# markdown 渲染引擎配置，默认是hexo-renderer-marked，这个插件渲染速度更快，且有新特性
+# markdown:
+#   preset: 'default'
+#   render:
+#     html: true
+#     xhtmlOut: false
+#     langPrefix: 'language-'
+#     breaks: true
+#     linkify: true
+#     typographer: true
+#     quotes: '“”‘’'
+#   enable_rules:
+#   disable_rules:
+#   plugins:
+#     - markdown-it-footnote
+#     - markdown-it-sup
+#     - markdown-it-sub
+#     - markdown-it-abbr
+#     - markdown-it-emoji
+#     - plugin:
+#         name: '@neilsustc/markdown-it-katex'
+#         options:
+#           strict: false
+#   anchors:
+#     level: 2
+#     collisionSuffix: 'v'
+#     permalink: false
+#     permalinkClass: 'header-anchor'
+#     permalinkSide: 'left'
+#     permalinkSymbol: '¶'
+#     case: 0
+#     separator: '-'
+kramed:
+  gfm: true
+  pedantic: false
+  sanitize: false
+  tables: true
+  breaks: true
+  smartLists: true
+  smartypants: true
+# emoji:
 #   enable: true
 #   className: github-emoji
-#   inject: true
 #   styles:
 #   customEmojis:
-
-## markdown 渲染引擎配置，默认是hexo-renderer-marked，这个插件渲染速度更快，且有新特性
-markdown:
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: true
-    linkify: true
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-footnote
-    - markdown-it-sup
-    - markdown-it-sub
-    - markdown-it-abbr
-    - markdown-it-emoji
-    - plugin:
-        name: '@neilsustc/markdown-it-katex'
-        options:
-          strict: false
-  anchors:
-    level: 2
-    collisionSuffix: 'v'
-    permalink: false
-    permalinkClass: header-anchor
-    permalinkSymbol: ¶
