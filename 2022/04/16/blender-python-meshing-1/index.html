@@ -1,0 +1,368 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Blender-Python API Meshing (1) | 小手冰凉</title><meta name="keywords" content="Blender,Python,Modelling"><meta name="author" content="Jiabao Hu,hujiabao1224@gmail.com, jiabaoh2@illinios.edu, jiabao.19@intl.zju.edu.cn"><meta name="copyright" content="Jiabao Hu"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Blender-Python API Meshing Introduction  Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D-printed models, motion graphi">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Blender-Python API Meshing (1)">
+<meta property="og:url" content="https://hujacobjiabao.github.io/2022/04/16/blender-python-meshing-1/index.html">
+<meta property="og:site_name" content="小手冰凉">
+<meta property="og:description" content="Blender-Python API Meshing Introduction  Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D-printed models, motion graphi">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://w.wallhaven.cc/full/4g/wallhaven-4g282e.jpg">
+<meta property="article:published_time" content="2022-04-17T00:29:34.000Z">
+<meta property="article:modified_time" content="2022-04-17T04:47:40.612Z">
+<meta property="article:author" content="Jiabao Hu">
+<meta property="article:tag" content="Blender">
+<meta property="article:tag" content="Python">
+<meta property="article:tag" content="Modelling">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://w.wallhaven.cc/full/4g/wallhaven-4g282e.jpg"><link rel="shortcut icon" href="/img/xiaoshoubingliang.jpg"><link rel="canonical" href="https://hujacobjiabao.github.io/2022/04/16/blender-python-meshing-1/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"We didn't find any results for the search: ${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Blender-Python API Meshing (1)',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2022-04-16 23:47:40'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.1.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avator.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">6</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://w.wallhaven.cc/full/4g/wallhaven-4g282e.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">小手冰凉</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Search</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Blender-Python API Meshing (1)</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-04-17T00:29:34.000Z" title="Created 2022-04-16 19:29:34">2022-04-16</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2022-04-17T04:47:40.612Z" title="Updated 2022-04-16 23:47:40">2022-04-16</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Blender/">Blender</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Blender-Python API Meshing (1)"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-separator">|</span><span class="post-meta-commentcount"><i class="far fa-comments fa-fw post-meta-icon"></i><span class="post-meta-label">Comments:</span><a href="/2022/04/16/blender-python-meshing-1/#post-comment"><span class="gitalk-comment-count"></span></a></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1>Blender-Python API Meshing</h1>
+<h2 id="Introduction">Introduction</h2>
+<blockquote>
+<p><em>Blender is a free and open-source 3D computer graphics software toolset used for creating animated films, visual effects, art, 3D-printed models, motion graphics, interactive 3D applications, virtual reality, and, formerly, video games.</em></p>
+</blockquote>
+<p>It is a tutorial to teach you how to create mesh by Blender-Python.</p>
+<p>First of all, to be able to use the Blender-Python API, you need to import the <strong>bpy</strong> library.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> bpy</span><br></pre></td></tr></table></figure>
+<p>When you open your new blender python, you can find a cube in the origin. And there is only one area for operating. What we are going to do is to create two new areas.</p>
+<figure>
+<img src = 'https://raw.githubusercontent.com/HuJacobJiabao/HuJacobJiabao.github.io/main/blog/source/img/bpm1/1.jpg'>
+<img src = 'https://raw.githubusercontent.com/HuJacobJiabao/HuJacobJiabao.github.io/main/blog/source/img/bpm1/2.jpg'>
+<img src = 'https://raw.githubusercontent.com/HuJacobJiabao/HuJacobJiabao.github.io/main/blog/source/img/bpm1/3.jpg'>
+</figure>
+And set the different regions like the figure shown below. It's my personal preferrence, you can set the region as your like. 
+<img src = 'https://raw.githubusercontent.com/HuJacobJiabao/HuJacobJiabao.github.io/main/blog/source/img/bpm1/5.jpg'>
+<h3 id="Python-Console">Python Console</h3>
+<p>Let’s firstly use the python console.</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; bpy.data.objects</span></span><br><span class="line">&lt;bpy_collection[3], BlendDataObjects&gt;</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; bpy.data.objects.keys()</span></span><br><span class="line">[&#x27;Camera&#x27;, &#x27;Cube&#x27;, &#x27;Light&#x27;]</span><br></pre></td></tr></table></figure>
+<p>And we can assign the object <code>'Cube'</code> to a variable <code>cube</code>. And move the cube to another position.</p>
+<figure class="highlight console"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; cube = bpy.data.objects[<span class="string">&#x27;Cube&#x27;</span>]</span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; cube.location</span></span><br><span class="line">Vector((0.0, 0.0, 0.0))</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">&gt;</span><span class="language-bash">&gt;&gt; cube.location = (1, 1, 1)</span></span><br></pre></td></tr></table></figure>
+<p>Then the centroid of the cube will move to <code>(1, 1, 1)</code>.<br>
+<img src = 'https://raw.githubusercontent.com/HuJacobJiabao/HuJacobJiabao.github.io/main/blog/source/img/bpm1/6.jpg'></p>
+<h3 id="Text-Editor">Text Editor</h3>
+<p>The operations above can be done by using the script in the text editor.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> bpy</span><br><span class="line"></span><br><span class="line">cube = bpy.data.objects[<span class="string">&#x27;Cube&#x27;</span>]</span><br><span class="line">cube.location = (<span class="number">1</span>, <span class="number">1</span>, <span class="number">1</span>)</span><br></pre></td></tr></table></figure>
+<h2 id="Mesh">Mesh</h2>
+<p>In order to create mesh for a desirable objects. We need to define the vertices and faces.</p>
+<h3 id="Mesh-a-plate">Mesh a plate</h3>
+<p>Let’s create a plate</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> bpy</span><br><span class="line"></span><br><span class="line"><span class="comment"># Select and delete all the objects</span></span><br><span class="line">bpy.ops.<span class="built_in">object</span>.select_all(action = <span class="string">&#x27;SELECT&#x27;</span>)</span><br><span class="line">bpy.ops.<span class="built_in">object</span>.delete()</span><br><span class="line"></span><br><span class="line">vertices = [(-<span class="number">1</span>, -<span class="number">1</span>, <span class="number">0</span>), (<span class="number">1</span>, -<span class="number">0</span>, <span class="number">0</span>), (<span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>), (-<span class="number">1</span>, <span class="number">1</span>, <span class="number">0</span>)] <span class="comment"># The coordinates of different vertices</span></span><br><span class="line">faces = [(<span class="number">0</span>, <span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>)] <span class="comment"># Only one face, so the shape is a plate.</span></span><br><span class="line"></span><br><span class="line">name = <span class="string">&#x27;New Plate&#x27;</span></span><br><span class="line">mesh = bpy.data.meshes.new(name)</span><br><span class="line"></span><br><span class="line">obj = bpy.data.objects.new(name, mesh)</span><br><span class="line"></span><br><span class="line">bpy.context.scene.collection.objects.link(obj)</span><br><span class="line"></span><br><span class="line">mesh.from_pydata(vertices,[],faces)</span><br><span class="line">mesh.update(calc_edges=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<img src = 'https://raw.githubusercontent.com/HuJacobJiabao/HuJacobJiabao.github.io/main/blog/source/img/bpm1/7.jpg'>
+<h3 id="Mesh-a-3D-Supershape">Mesh a 3D Supershape</h3>
+<h4 id="3D-Supershape">3D Supershape</h4>
+<p>A 3D supershape can be parameterized by the Superformula<sup><a href="#fn1" id="ref1">1</a></sup>.</p>
+<blockquote>
+<p><em>The superformula is a generalization of the superellipse and was proposed by Johan Gielis around 2000. Gielis suggested that the formula can be used to describe many complex shapes and curves that are found in nature. Gielis has filed a patent application related to the synthesis of patterns generated by the superformula.</em></p>
+</blockquote>
+<p>In polar coordinates, with $r$ the radius and $\varphi$ the angle, the superformula is,<br>
+$$r(\varphi) = (|\frac{\cos(\frac{m\varphi}4)}a|^{n_2} + |\frac{\sin(\frac{m\varphi}4)}b|^{n_3})^{n_1}$$</p>
+<p>By changing $a, b, m, n_1, n_2, n_3$, we can get different shapes.</p>
+<h4 id="Demonstration-adapted-by-THE-PROVING-GROUND-sup-a-href-fn2-id-ref2-2-a-sup">Demonstration (adapted by <em>THE PROVING GROUND</em><sup><a href="#fn2" id="ref2">2</a></sup>)</h4>
+<p>Firstly, import the libraries, delete the existing objects, and then define the parameters and empty lists to store vertices, faces and edges.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> bpy</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line">bpy.ops.<span class="built_in">object</span>.select_all(action = <span class="string">&#x27;SELECT&#x27;</span>)</span><br><span class="line">bpy.ops.<span class="built_in">object</span>.delete()</span><br><span class="line"><span class="comment"># mesh arrays</span></span><br><span class="line">verts = []</span><br><span class="line">faces = []</span><br><span class="line">edges = []</span><br><span class="line"> </span><br><span class="line"><span class="comment"># Initialize 3D supershape parameters</span></span><br><span class="line">m = <span class="number">17</span></span><br><span class="line">a = -<span class="number">0.06</span></span><br><span class="line">b = <span class="number">6</span></span><br><span class="line">n1 = <span class="number">0.5</span></span><br><span class="line">n2 = -<span class="number">.48</span></span><br><span class="line">n3 = <span class="number">1</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">scale = <span class="number">3</span></span><br><span class="line"> </span><br><span class="line">Unum = <span class="number">50</span></span><br><span class="line">Vnum = <span class="number">50</span></span><br><span class="line"> </span><br><span class="line">dU = <span class="number">2</span> * np.pi / Unum</span><br><span class="line">dV = np.pi / Vnum</span><br></pre></td></tr></table></figure>
+<p>Then create the vertices,</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># create vertices</span></span><br><span class="line">theta = -np.pi            <span class="comment"># Set the initial value for theta</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span> (<span class="number">0</span>, Unum + <span class="number">1</span>):</span><br><span class="line">    phi = -np.pi/<span class="number">2</span></span><br><span class="line">    r1 = <span class="number">1</span>/(((<span class="built_in">abs</span>(np.cos(m*theta/<span class="number">4</span>)/a))**n2+(<span class="built_in">abs</span>(np.sin(m*theta/<span class="number">4</span>)/b))**n3)**n1)</span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">0</span>, Vnum + <span class="number">1</span>):</span><br><span class="line">        r2 = <span class="number">1</span>/(((<span class="built_in">abs</span>(np.cos(m*phi/<span class="number">4</span>)/a))**n2+(<span class="built_in">abs</span>(np.sin(m*phi/<span class="number">4</span>)/b))**n3)**n1)</span><br><span class="line">        x = scale * (r1 * np.cos(theta) * r2 * np.cos(phi))</span><br><span class="line">        y = scale * (r1 * np.sin(theta) * r2 * np.cos(phi))</span><br><span class="line">        z = scale * (r2 * np.sin(phi))</span><br><span class="line"> </span><br><span class="line">        vert = (x,y,z)</span><br><span class="line">        verts.append(vert)</span><br><span class="line">        <span class="comment"># update phi</span></span><br><span class="line">        phi += dV</span><br><span class="line">    <span class="comment"># update theta</span></span><br><span class="line">    theta += dU</span><br></pre></td></tr></table></figure>
+<p>Create the faces, and make sure the face will not intersect.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">count = <span class="number">0</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span> (<span class="number">0</span>, (Vnum + <span class="number">1</span>) *(Unum)):</span><br><span class="line">    <span class="keyword">if</span> count &lt; Vnum:</span><br><span class="line">        A = i</span><br><span class="line">        B = i+<span class="number">1</span></span><br><span class="line">        C = (i+(Vnum+<span class="number">1</span>))+<span class="number">1</span></span><br><span class="line">        D = (i+(Vnum+<span class="number">1</span>))</span><br><span class="line"> </span><br><span class="line">        face = (A,B,C,D)</span><br><span class="line">        faces.append(face)</span><br><span class="line"> </span><br><span class="line">        count = count + <span class="number">1</span></span><br><span class="line">    <span class="keyword">else</span>:</span><br><span class="line">        count = <span class="number">0</span></span><br></pre></td></tr></table></figure>
+<p>Create mesh.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#create mesh and object</span></span><br><span class="line">mymesh = bpy.data.meshes.new(<span class="string">&quot;supershape&quot;</span>)</span><br><span class="line">myobject = bpy.data.objects.new(<span class="string">&quot;supershape&quot;</span>,mymesh)</span><br><span class="line"> </span><br><span class="line"><span class="comment">#set mesh location</span></span><br><span class="line">myobject.location = (<span class="number">0</span>, <span class="number">0</span>, <span class="number">0</span>)</span><br><span class="line">bpy.context.scene.collection.objects.link(myobject)</span><br><span class="line"> </span><br><span class="line"><span class="comment">#create mesh from python data</span></span><br><span class="line">mymesh.from_pydata(verts,edges,faces)</span><br><span class="line">mymesh.update(calc_edges=<span class="literal">True</span>)</span><br></pre></td></tr></table></figure>
+<p>Then we will get a shape like that<br>
+<img src = 'https://raw.githubusercontent.com/HuJacobJiabao/HuJacobJiabao.github.io/main/blog/source/img/bpm1/8.jpg'></p>
+<p>We can also make some other operations like smoothing.</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#set the object to edit mode</span></span><br><span class="line">bpy.context.view_layer.objects.active = myobject</span><br><span class="line">bpy.ops.<span class="built_in">object</span>.mode_set(mode=<span class="string">&#x27;EDIT&#x27;</span>)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># remove duplicate vertices</span></span><br><span class="line">bpy.ops.mesh.remove_doubles() </span><br><span class="line"> </span><br><span class="line"><span class="comment"># recalculate normals</span></span><br><span class="line">bpy.ops.mesh.normals_make_consistent(inside=<span class="literal">False</span>)</span><br><span class="line">bpy.ops.<span class="built_in">object</span>.mode_set(mode=<span class="string">&#x27;OBJECT&#x27;</span>)</span><br><span class="line"> </span><br><span class="line"><span class="comment"># subdivide modifier</span></span><br><span class="line">myobject.modifiers.new(<span class="string">&quot;subd&quot;</span>, <span class="built_in">type</span>=<span class="string">&#x27;SUBSURF&#x27;</span>)</span><br><span class="line">myobject.modifiers[<span class="string">&#x27;subd&#x27;</span>].levels = <span class="number">3</span></span><br><span class="line"> </span><br><span class="line"><span class="comment"># show mesh as smooth</span></span><br><span class="line">mypolys = mymesh.polygons</span><br><span class="line"><span class="keyword">for</span> p <span class="keyword">in</span> mypolys:</span><br><span class="line">    p.use_smooth = <span class="literal">True</span></span><br></pre></td></tr></table></figure>
+<p>Final shape will be displayed like<br>
+<img src = 'https://raw.githubusercontent.com/HuJacobJiabao/HuJacobJiabao.github.io/main/blog/source/img/bpm1/9.jpg'></p>
+<p>You can also change the parameters to get a different shape as you want,</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">m = <span class="number">17</span></span><br><span class="line">a = -<span class="number">0.06</span></span><br><span class="line">b = <span class="number">6</span></span><br><span class="line">n1 = <span class="number">0.6</span></span><br><span class="line">n2 = -<span class="number">.6</span></span><br><span class="line">n3 = <span class="number">2</span></span><br><span class="line"> </span><br><span class="line">scale = <span class="number">3</span></span><br><span class="line"> </span><br><span class="line">Unum = <span class="number">80</span></span><br><span class="line">Vnum = <span class="number">80</span></span><br></pre></td></tr></table></figure>
+<img src = 'https://raw.githubusercontent.com/HuJacobJiabao/HuJacobJiabao.github.io/main/blog/source/img/bpm1/10.jpg'>
+<hr></hr>
+<p><sup id="fn1">1. <a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Superformula#3D_plots">https://en.wikipedia.org/wiki/Superformula#3D_plots</a><a href="#ref1" title="Jump back to footnote 1 in the text.">↩</a></sup></p>
+<p><sup id="fn2">2. <a target="_blank" rel="noopener" href="http://wiki.theprovingground.org/blender-py-supershape">http://wiki.theprovingground.org/blender-py-supershape</a><a href="#ref2" title="Jump back to footnote 2 in the text.">↩</a></sup></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="mailto:hujiabao1224@gmail.com, jiabaoh2@illinios.edu, jiabao.19@intl.zju.edu.cn">Jiabao Hu</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="https://hujacobjiabao.github.io/2022/04/16/blender-python-meshing-1/">https://hujacobjiabao.github.io/2022/04/16/blender-python-meshing-1/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Blender/">Blender</a><a class="post-meta__tags" href="/tags/Python/">Python</a><a class="post-meta__tags" href="/tags/Modelling/">Modelling</a></div><div class="post_share"><div class="social-share" data-image="https://w.wallhaven.cc/full/4g/wallhaven-4g282e.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2022/04/16/music-list-1/"><img class="next-cover" src="https://p3.music.126.net/8UzYkyVV6BQKldNjKd6Xnw==/17647161626139835.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Music List 1</div></div></a></div></nav><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> Comment</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avator.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Jiabao Hu</div><div class="author-info__description">ZJUI Undergraduate Class 2023</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">Tags</div><div class="length-num">6</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">Categories</div><div class="length-num">4</div></a></div></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/HuJacobJiabao"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/HuJacobJiabao" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:hujiabao1224@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a><a class="social-icon" href="https://music.163.com/#/artist?id=35422348" target="_blank" title="Musician Page"><i class="fa-solid fa-circle-play"></i></a><a class="social-icon" href="tel:+1217-898-9509" target="_blank" title=""><i class="fa-solid fa-mobile"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-number">1.</span> <span class="toc-text">Blender-Python API Meshing</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Introduction"><span class="toc-number">1.1.</span> <span class="toc-text">Introduction</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Python-Console"><span class="toc-number">1.1.1.</span> <span class="toc-text">Python Console</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Text-Editor"><span class="toc-number">1.1.2.</span> <span class="toc-text">Text Editor</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Mesh"><span class="toc-number">1.2.</span> <span class="toc-text">Mesh</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mesh-a-plate"><span class="toc-number">1.2.1.</span> <span class="toc-text">Mesh a plate</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Mesh-a-3D-Supershape"><span class="toc-number">1.2.2.</span> <span class="toc-text">Mesh a 3D Supershape</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3D-Supershape"><span class="toc-number">1.2.2.1.</span> <span class="toc-text">3D Supershape</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Demonstration-adapted-by-THE-PROVING-GROUND-sup-a-href-fn2-id-ref2-2-a-sup"><span class="toc-number">1.2.2.2.</span> <span class="toc-text">Demonstration (adapted by THE PROVING GROUND2)</span></a></li></ol></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/04/16/blender-python-meshing-1/" title="Blender-Python API Meshing (1)"><img src="https://w.wallhaven.cc/full/4g/wallhaven-4g282e.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Blender-Python API Meshing (1)"/></a><div class="content"><a class="title" href="/2022/04/16/blender-python-meshing-1/" title="Blender-Python API Meshing (1)">Blender-Python API Meshing (1)</a><time datetime="2022-04-17T00:29:34.000Z" title="Created 2022-04-16 19:29:34">2022-04-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/16/music-list-1/" title="Music List 1"><img src="https://p3.music.126.net/8UzYkyVV6BQKldNjKd6Xnw==/17647161626139835.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Music List 1"/></a><div class="content"><a class="title" href="/2022/04/16/music-list-1/" title="Music List 1">Music List 1</a><time datetime="2022-04-16T09:26:46.000Z" title="Created 2022-04-16 04:26:46">2022-04-16</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/04/14/hello-world/" title="Hello World"><img src="https://w.wallhaven.cc/full/4g/wallhaven-4g282e.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"/></a><div class="content"><a class="title" href="/2022/04/14/hello-world/" title="Hello World">Hello World</a><time datetime="2022-04-14T17:05:30.640Z" title="Created 2022-04-14 12:05:30">2022-04-14</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://w.wallhaven.cc/full/4g/wallhaven-4g282e.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2022 By Jiabao Hu</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div><div class="footer_custom_text">Welcome to my personal page!</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="Scroll To Comments"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Local search</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  Loading the Database</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="Search for Posts" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: 'b36a68797ac53b4fa783',
+      clientSecret: '27f9bafaa538fc6492e8291a0f16ca2bc0868c5f',
+      repo: 'blog-comments',
+      owner: 'HuJacobJiabao',
+      admin: ['HuJacobJiabao'],
+      id: 'd33425fd2132ca61822424656614843e',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !false) {
+  if (false) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><div class="aplayer no-destroy" data-id="409809868" data-server="netease" data-type="playlist" data-fixed="true" data-autoplay = "true"data-lrctype="0" data-order="random"> </div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/gh/metowolf/MetingJS@1.2/dist/Meting.min.js"></script><script src="https://cdn.jsdelivr.net/npm/pjax/pjax.min.js"></script><script>let pjaxSelectors = ["title","#config-diff","#body-wrap","#rightside-config-hide","#rightside-config-show",".js-pjax"]
+
+var pjax = new Pjax({
+  elements: 'a:not([target="_blank"])',
+  selectors: pjaxSelectors,
+  cacheBust: false,
+  analytics: false,
+  scrollRestoration: false
+})
+
+document.addEventListener('pjax:send', function () {
+
+  // removeEventListener scroll 
+  window.tocScrollFn && window.removeEventListener('scroll', window.tocScrollFn)
+  window.scrollCollect && window.removeEventListener('scroll', scrollCollect)
+
+  typeof preloader === 'object' && preloader.initLoading()
+  document.getElementById('rightside').style.cssText = "opacity: ''; transform: ''"
+  
+  if (window.aplayers) {
+    for (let i = 0; i < window.aplayers.length; i++) {
+      if (!window.aplayers[i].options.fixed) {
+        window.aplayers[i].destroy()
+      }
+    }
+  }
+
+  typeof typed === 'object' && typed.destroy()
+
+  //reset readmode
+  const $bodyClassList = document.body.classList
+  $bodyClassList.contains('read-mode') && $bodyClassList.remove('read-mode')
+
+})
+
+document.addEventListener('pjax:complete', function () {
+  window.refreshFn()
+
+  document.querySelectorAll('script[data-pjax]').forEach(item => {
+    const newScript = document.createElement('script')
+    const content = item.text || item.textContent || item.innerHTML || ""
+    Array.from(item.attributes).forEach(attr => newScript.setAttribute(attr.name, attr.value))
+    newScript.appendChild(document.createTextNode(content))
+    item.parentNode.replaceChild(newScript, item)
+  })
+
+  GLOBAL_CONFIG.islazyload && window.lazyLoadInstance.update()
+
+  typeof chatBtnFn === 'function' && chatBtnFn()
+  typeof panguInit === 'function' && panguInit()
+
+  // google analytics
+  typeof gtag === 'function' && gtag('config', '', {'page_path': window.location.pathname});
+
+  // baidu analytics
+  typeof _hmt === 'object' && _hmt.push(['_trackPageview',window.location.pathname]);
+
+  typeof loadMeting === 'function' && document.getElementsByClassName('aplayer').length && loadMeting()
+
+  // prismjs
+  typeof Prism === 'object' && Prism.highlightAll()
+
+  typeof preloader === 'object' && preloader.endLoading()
+})
+
+document.addEventListener('pjax:error', (e) => {
+  if (e.request.status === 404) {
+    pjax.loadUrl('/404.html')
+  }
+})</script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
