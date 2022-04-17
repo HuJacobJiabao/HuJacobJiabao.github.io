@@ -14,11 +14,11 @@ Staring from April 16, 2022, the music list will be "[pure 17.2.10](https://musi
 # My Preference for Music
 > *Pure music, or absolute music, is the music for its own sake—concerned only with structure, melody, harmony, and rhythm*. 
 
-Literally, I pay more attention on melody or harmony, rather than the lyrics. If I would like to listen to some songs with lyrics, I prefer those I don't understand since I don't really care about the meaning of the songs. Therefore, I don't often listen to Chinese songs. As for me, lyrics are something more related to literature and distract me from concentrating on "music". Lyrics are just auxiliary tools. The impressive music can convey the emotion to audience through a single note, a chord, a tone-changing, a repeat, or even a pause.
+Literally, I pay more attention on melody or harmony, rather than the lyrics. If I would like to listen to some songs with lyrics, I prefer those I don't understand since I don't really care about the meaning of the songs. Therefore, I don't often listen to Chinese songs. As for me, lyrics are something more related to literature and distract me from concentrating on "music". Lyrics are just auxiliary tools. The impressive music can convey the emotion to audience through a single note, a chord, a modulation, a repeat, or even a pause.
 # Nomenclature for Music List
 The "pure" in my music list means that it is a list for pure music, and the following number in a ***year.month.day*** format means the date that I finished collecting **100** songs for the list. Then I will create a new list for selected music. Currently the number of songs in some lists is smaller than 100 due to copyright.
 
-# For [pure 17.2.10](https://music.163.com/#/playlist?id=409809868)
+# About [pure 17.2.10](https://music.163.com/#/playlist?id=409809868)
 Most of the songs were collected during the summer vacation after I graduated from middle school. Most of them are lyrical and quiet. Here are some special recommendations from my personal perspective,
 
 ## 1. Eutopia - Yoohsic Roomz

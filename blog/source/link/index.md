@@ -13,7 +13,7 @@ date: 2022-04-16 01:53:48
     - name: Take Tube
       link: https://taketube.github.io/
       avatar: https://avatars.githubusercontent.com/u/51813149?v=4
-      descr: Computer Graphics
+      descr: 他事Homo罢。
     - name: Mark Ma
       link: https://www.mkmark.net/
       avatar: https://avatars.githubusercontent.com/u/38940419?v=4
