@@ -296,6 +296,9 @@ And set the different regions like the figure shown below. It's my personal pref
 <h1>In The End</h1>
 <p>That’s’ all for this post, if you are using the hexo-butterfly theme, hope the blog will help you. And in the future I will try to make the tag plugins available in my way. Thanks for your reading.</p>
 ]]></content>
+      <categories>
+        <category>Blog Update</category>
+      </categories>
       <tags>
         <tag>Blog</tag>
       </tags>
