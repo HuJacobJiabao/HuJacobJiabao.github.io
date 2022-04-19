@@ -8,7 +8,7 @@ categories:
 cover: https://p3.music.126.net/8UzYkyVV6BQKldNjKd6Xnw==/17647161626139835.jpg
 ---
 # At the Beginning
-Welcome to my music sharing chanel:headphones:. It is the first blog for introducing my music list in the player on my website.
+Welcome to my music sharing channel:headphones:. It is the first blog for introducing my music list in the player on my website.
 
 Staring from April 16, 2022, the music list will be "[pure 17.2.10](https://music.163.com/#/playlist?id=409809868)". You can find it by clicking the hyperlink.
 # My Preference for Music

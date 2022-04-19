@@ -5,7 +5,6 @@ type: "about"
 top_img: https://w.wallhaven.cc/full/13/wallhaven-13lzov.jpg
 ---
 # Who am I
-
 Hello, welcome to my blog! I am Jiabao Hu, a junior CEE student at ZJU-UIUC Institute.:blush:
 
 I am currently interested in intelligent transportation system:car:, machine learning:computer:, and modeling by blender-python API.
