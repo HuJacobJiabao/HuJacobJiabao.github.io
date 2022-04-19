@@ -1,6 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2022/04/14/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">🔗</a>Quick Start</h2>
+<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">🔗</a>Create a new post</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a class="header-anchor" href="#Run-server">🔗</a>Run server</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<p>or</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">🔗</a>Generate static files</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<p>or</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">🔗</a>Deploy to remote sites</h3>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<p>or</p>
+<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></tbody></table></figure>
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>Blog Update</category>
+      </categories>
+      <tags>
+        <tag>Blog</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Blender-Python API Meshing (1)</title>
     <url>/2022/04/16/blender-python-meshing-1/</url>
     <content><![CDATA[<h1>Blender-Python API Meshing</h1>
@@ -77,32 +108,194 @@ And set the different regions like the figure shown below. It's my personal pref
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2022/04/14/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a class="header-anchor" href="#Quick-Start">🔗</a>Quick Start</h2>
-<h3 id="Create-a-new-post"><a class="header-anchor" href="#Create-a-new-post">🔗</a>Create a new post</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a class="header-anchor" href="#Run-server">🔗</a>Run server</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
-<p>or</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a class="header-anchor" href="#Generate-static-files">🔗</a>Generate static files</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
-<p>or</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a class="header-anchor" href="#Deploy-to-remote-sites">🔗</a>Deploy to remote sites</h3>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
-<p>or</p>
-<figure class="highlight bash"><table><tbody><tr><td class="code"><pre><span class="line">$ hexo d</span><br></pre></td></tr></tbody></table></figure>
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>Post Beautify by HTML</title>
+    <url>/2022/04/18/htmlcodes/</url>
+    <content><![CDATA[<h1>Why I Create This Post</h1>
+<p>Using Markdown can help us get a clear website without the knowledge of HTML. There’s still several shortages that Markdown’s functions are limited compared to HTML. I am also a beginner, so I just try to collect some useful codes for decorating my website pages.</p>
+<p>But firstly, we can see that quoting by Markdown syntax can beautify the page.</p>
+<h2 id="Quoting"><a class="header-anchor" href="#Quoting">🔗</a>Quoting</h2>
+<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="quote">&gt; It's a quoting demonstration.</span></span><br></pre></td></tr></tbody></table></figure>
+<blockquote>
+<p>It’s a quoting demonstration.</p>
+</blockquote>
+<p>In the hexo-butterfly theme, the quotation has a blue background. It makes some contents from others distinct from your own ideas.</p>
+<h1>Tag Plugins</h1>
+<p>The next part is for introducing some colorful text boxes to beautify the website.</p>
+<div class="note red icon flat"><i class="note-icon fa-solid fa-circle-exclamation"></i><p>What you need to pay attention to is that the following content may <strong>NOT work</strong> for themes other than <strong>hexo-butterfly</strong>, and it is only available in <strong><i>Hexo</i>.</strong></p></div>
+<p>The general grammar to create the tag plugins is</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span> = <span class="string">"note [color] [class] [icon-choices] [style]"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>PUT YOUR CONTENT HERE<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>color</td>
+<td><strong>red</strong>, <strong>blue</strong>, <strong>green</strong>, <strong>purple</strong>, <strong>pink</strong>, <strong>orange</strong> or just no value for <strong>grey</strong></td>
+</tr>
+<tr>
+<td>class</td>
+<td><strong>default</strong>, <strong>primary</strong>, <strong>success</strong>, <strong>info</strong>, <strong>warning</strong>, <strong>danger</strong></td>
+</tr>
+<tr>
+<td>icon-choices</td>
+<td><strong>icon</strong> (only available for part of fontawesome icons), <strong>no-icon</strong></td>
+</tr>
+<tr>
+<td>style</td>
+<td><strong>simple</strong>, <strong>modern</strong>, <strong>flat</strong>, <strong>disabled</strong></td>
+</tr>
+</tbody>
+</table>
+<h2 id="Style"><a class="header-anchor" href="#Style">🔗</a>Style</h2>
+<h3 id="Style-flat"><a class="header-anchor" href="#Style-flat">🔗</a>Style: <code>flat</code></h3>
+<h4 id="Without-Content"><a class="header-anchor" href="#Without-Content">🔗</a>Without Content</h4>
+<p>The original version is <code>class = "note flat"</code>.</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note flat"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note flat"></div>
+<p>You can see grey (I think it’s grey) color ribbon appear after you execute your code.</p>
+<h4 id="Add-Text"><a class="header-anchor" href="#Add-Text">🔗</a>Add Text</h4>
+<p>Then let’s increase some texts.</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note flat"><p>Hello World!</p></div>
+<p>Actually, the result is quite similar to the Markdown quotation on its original renderer.</p>
+<h4 id="Change-Color"><a class="header-anchor" href="#Change-Color">🔗</a>Change Color</h4>
+<p>Let’s change the color of the text box.</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note blue flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World! But in blue background.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note blue flat"><p>Hello World! But in blue background.</p></div>
+<p>It looks better compared to the original version!</p>
+<h4 id="Add-Emoji-span-class-emoji-alias-smiling-face-with-three-hearts-style-fallback-src-https-github-githubassets-com-images-icons-emoji-unicode-1f970-png-v8-🥰-span"><a class="header-anchor" href="#Add-Emoji-span-class-emoji-alias-smiling-face-with-three-hearts-style-fallback-src-https-github-githubassets-com-images-icons-emoji-unicode-1f970-png-v8-🥰-span">🔗</a>Add Emoji <span class="emoji" alias="smiling_face_with_three_hearts" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f970.png?v8">🥰</span></h4>
+<p>We can still make more changes to it like add some emojis.</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note blue flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="emoji" alias="sunglasses" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png?v8">😎</span>Hello World in blue background with emoji.<span class="emoji" alias="cowboy_hat_face" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f920.png?v8">🤠</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note blue flat"><p><span class="emoji" alias="sunglasses" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png?v8">😎</span>Hello World in blue background with emoji.<span class="emoji" alias="cowboy_hat_face" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f920.png?v8">🤠</span></p></div>
+<h4 id="Add-Icon"><a class="header-anchor" href="#Add-Icon">🔗</a>Add Icon</h4>
+<p>Alright, it seems to be the end of that part. However, did you notice the empty space between your beginning of text and the beginning of the text box. We can add a icon here.</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note green icon flat"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fas fa-rocket"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="emoji" alias="point_left" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png?v8">👈</span>Green rocket is on the left.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note green icon flat"><i class="note-icon fas fa-rocket"></i><p><span class="emoji" alias="point_left" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f448.png?v8">👈</span>Green rocket is on the left.</p></div>
+<p>The color of the icon is the same as the text box.</p>
+<p>If you don’t like the icon, and don’t want there’s a waste of space in the text box, that’s also fine.</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note green no-icon flat"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="emoji" alias="disappointed" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f61e.png?v8">😞</span>No icon here.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note green no-icon flat"><p><span class="emoji" alias="disappointed" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f61e.png?v8">😞</span>No icon here.</p></div>
+<h4 id="Some-Other-Colors"><a class="header-anchor" href="#Some-Other-Colors">🔗</a>Some Other Colors</h4>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note orange icon flat"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fas fa-magic"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Do something <span class="tag">&lt;<span class="name">strong</span>&gt;</span>WISELY<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note red icon flat"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-brands fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>First </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git add .<span class="tag">&lt;/<span class="name">code</span>&gt;</span>, then </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git commit -m"xxx"<span class="tag">&lt;/<span class="name">code</span>&gt;</span>, finally </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git push<span class="tag">&lt;/<span class="name">code</span>&gt;</span>.</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note purple icon flat"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-solid fa-apple-whole"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Alright, do you like purple?<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note pink icon flat"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-solid fa-anchor"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Pink color looks so cute.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<p>The results are shown below <span class="emoji" alias="point_down" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f447.png?v8">👇</span>.</p>
+<div class="note orange icon flat"><i class="note-icon fas fa-magic"></i><p>Do something <strong>WISELY</strong></p></div>
+<div class="note red icon flat">
+    <i class="note-icon fa-brands fa-github"></i>
+    <p>First 
+        <code>git add .</code>, then 
+        <code>git commit -m"xxx"</code>, finally 
+        <code>git push</code>.
+    </p>
+</div>
+<div class="note purple icon flat">
+    <i class="note-icon fa-solid fa-apple-whole"></i>
+    <p>Alright, do you like purple?</p>
+</div>
+<div class="note pink icon flat">
+    <i class="note-icon fa-solid fa-anchor"></i>
+    <p>Pink color looks so cute.</p>
+</div>
+<h3 id="Style-simple"><a class="header-anchor" href="#Style-simple">🔗</a>Style: <code>simple</code></h3>
+<p>I will use the same content in the <strong>Style: <code>flat</code></strong> section for the comparison.</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note simple"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note blue no-icon simple"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>😎Hello World in blue background with emoji. (Actually, there's no more blue background anymore.<span class="emoji" alias="cry" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8">😢</span>)<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note green icon simple"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fas fa-rocket"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>👈Green rocket is on the left.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note orange icon simple"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fas fa-magic"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Do something <span class="tag">&lt;<span class="name">strong</span>&gt;</span>WISELY<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note red icon simple"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-brands fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>First </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git add .<span class="tag">&lt;/<span class="name">code</span>&gt;</span>, then </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git commit -m"xxx"<span class="tag">&lt;/<span class="name">code</span>&gt;</span>, finally </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git push<span class="tag">&lt;/<span class="name">code</span>&gt;</span>.</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note purple icon simple"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-solid fa-apple-whole"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Alright, do you like purple?<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note pink icon simple"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-solid fa-anchor"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Pink color looks so cute.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note simple"><p>Hello World!</p></div>
+<div class="note blue no-icon simple"><p>😎Hello World in blue background with emoji. (Actually, there's no more blue background anymore.<span class="emoji" alias="cry" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8">😢</span>)</p></div>
+<div class="note green icon simple"><i class="note-icon fas fa-rocket"></i><p>👈Green rocket is on the left.</p></div>
+<div class="note orange icon simple"><i class="note-icon fas fa-magic"></i><p>Do something <strong>WISELY</strong></p></div>
+<div class="note red icon simple">
+    <i class="note-icon fa-brands fa-github"></i>
+    <p>First 
+        <code>git add .</code>, then 
+        <code>git commit -m"xxx"</code>, finally 
+        <code>git push</code>.
+    </p>
+</div>
+<div class="note purple icon simple">
+    <i class="note-icon fa-solid fa-apple-whole"></i>
+    <p>Alright, do you like purple?</p>
+</div>
+<div class="note pink icon simple">
+    <i class="note-icon fa-solid fa-anchor"></i>
+    <p>Pink color looks so cute.</p>
+</div>
+<p>It looks much simpler and cleaner.</p>
+<h3 id="Style-modern"><a class="header-anchor" href="#Style-modern">🔗</a>Style: <code>modern</code></h3>
+<p>The <code>modern</code> style is close to the <code>flat</code> style. The color of your text will change to the same color as the background.</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note modern"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note blue no-icon modern"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>😎Hello World in blue background with emoji. (Actually, there's no more blue background anymore.<span class="emoji" alias="cry" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8">😢</span>)<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note green icon modern"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fas fa-rocket"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>👈Green rocket is on the left.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note orange icon modern"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fas fa-magic"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Do something <span class="tag">&lt;<span class="name">strong</span>&gt;</span>WISELY<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note red icon modern"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-brands fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>First </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git add .<span class="tag">&lt;/<span class="name">code</span>&gt;</span>, then </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git commit -m"xxx"<span class="tag">&lt;/<span class="name">code</span>&gt;</span>, finally </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git push<span class="tag">&lt;/<span class="name">code</span>&gt;</span>.</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note purple icon modern"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-solid fa-apple-whole"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Alright, do you like purple?<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note pink icon modern"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-solid fa-anchor"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Pink color looks so cute.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note modern"><p>Hello World!</p></div>
+<div class="note blue no-icon modern"><p>😎Hello World in blue background with emoji. (Actually, there's no more blue background anymore.<span class="emoji" alias="cry" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8">😢</span>)</p></div>
+<div class="note green icon modern"><i class="note-icon fas fa-rocket"></i><p>👈Green rocket is on the left.</p></div>
+<div class="note orange icon modern"><i class="note-icon fas fa-magic"></i><p>Do something <strong>WISELY</strong></p></div>
+<div class="note red icon modern">
+    <i class="note-icon fa-brands fa-github"></i>
+    <p>First 
+        <code>git add .</code>, then 
+        <code>git commit -m"xxx"</code>, finally 
+        <code>git push</code>.
+    </p>
+</div>
+<div class="note purple icon modern">
+    <i class="note-icon fa-solid fa-apple-whole"></i>
+    <p>Alright, do you like purple?</p>
+</div>
+<div class="note pink icon modern">
+    <i class="note-icon fa-solid fa-anchor"></i>
+    <p>Pink color looks so cute.</p>
+</div>
+<h3 id="style-disabled"><a class="header-anchor" href="#style-disabled">🔗</a>style: <code>disabled</code></h3>
+<p>No background, the simplest version.</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note disabled"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note blue no-icon disabled"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>😎Hello World in blue background with emoji. (Actually, there's no more blue background anymore.<span class="emoji" alias="cry" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8">😢</span>)<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note green icon disabled"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fas fa-rocket"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>👈Green rocket is on the left.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note orange icon disabled"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fas fa-magic"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Do something <span class="tag">&lt;<span class="name">strong</span>&gt;</span>WISELY<span class="tag">&lt;/<span class="name">strong</span>&gt;</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note red icon disabled"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-brands fa-github"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>First </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git add .<span class="tag">&lt;/<span class="name">code</span>&gt;</span>, then </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git commit -m"xxx"<span class="tag">&lt;/<span class="name">code</span>&gt;</span>, finally </span><br><span class="line">        <span class="tag">&lt;<span class="name">code</span>&gt;</span>git push<span class="tag">&lt;/<span class="name">code</span>&gt;</span>.</span><br><span class="line">    <span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note purple icon disabled"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-solid fa-apple-whole"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Alright, do you like purple?<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note pink icon disabled"</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-solid fa-anchor"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">p</span>&gt;</span>Pink color looks so cute.<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note disabled"><p>Hello World!</p></div>
+<div class="note blue no-icon disabled"><p>😎Hello World in blue background with emoji. (Actually, there's no more blue background anymore.<span class="emoji" alias="cry" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f622.png?v8">😢</span>)</p></div>
+<div class="note green icon disabled"><i class="note-icon fas fa-rocket"></i><p>👈Green rocket is on the left.</p></div>
+<div class="note orange icon disabled"><i class="note-icon fas fa-magic"></i><p>Do something <strong>WISELY</strong></p></div>
+<div class="note red icon disabled">
+    <i class="note-icon fa-brands fa-github"></i>
+    <p>First 
+        <code>git add .</code>, then 
+        <code>git commit -m"xxx"</code>, finally 
+        <code>git push</code>.
+    </p>
+</div>
+<div class="note purple icon disabled">
+    <i class="note-icon fa-solid fa-apple-whole"></i>
+    <p>Alright, do you like purple?</p>
+</div>
+<div class="note pink icon disabled">
+    <i class="note-icon fa-solid fa-anchor"></i>
+    <p>Pink color looks so cute.</p>
+</div>
+<h2 id="Class"><a class="header-anchor" href="#Class">🔗</a>Class</h2>
+<p>You can change the color for the different classes, but the icon in the classes will not change as the color changes. So I don’t encourage you to change the color of the classes, if you still want to do so, try to use the <code>class = "note [color] [icon] [style]"</code> instead.</p>
+<h3 id="Class-default"><a class="header-anchor" href="#Class-default">🔗</a>Class: <code>default</code></h3>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note default flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>It is the default class.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note default flat"><p>It is the default class.</p></div>
+<h3 id="Class-primary"><a class="header-anchor" href="#Class-primary">🔗</a>Class: <code>primary</code></h3>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note primary flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>It is the primary class.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note primary flat"><p>It is the primary class.</p></div>
+<h3 id="Class-success"><a class="header-anchor" href="#Class-success">🔗</a>Class: <code>success</code></h3>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note success flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>It is the success class.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note success flat"><p>It is the success class.</p></div>
+<h3 id="Class-info"><a class="header-anchor" href="#Class-info">🔗</a>Class: <code>info</code></h3>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note info flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>It is the info class.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note info flat"><p>It is the info class.</p></div>
+<h3 id="Class-warning"><a class="header-anchor" href="#Class-warning">🔗</a>Class: <code>warning</code></h3>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note warning flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>It is the warning class.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note warning flat"><p>It is the warning class.</p></div>
+<p>Personally, it seems to be more persuasive to use the red color to show the warning.</p>
+<p>Maybe you can try</p>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note red icon flat"</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">"note-icon fa-solid fa-circle-exclamation"</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Strong warning is always in red.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note red icon flat"><i class="note-icon fa-solid fa-circle-exclamation"></i><p>Strong warning is always in red.</p></div>
+<h3 id="Class-danger"><a class="header-anchor" href="#Class-danger">🔗</a>Class: <code>danger</code></h3>
+<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note danger flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>It is the danger class.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
+<div class="note danger flat"><p>It is the danger class.</p></div>
+<h1>In The End</h1>
+<p>That’s’ all for this post, if you are using the hexo-butterfly theme, hope the blog will help you. And in the future I will try to make the tag plugins available in my way. Thanks for your reading.</p>
 ]]></content>
-      <categories>
-        <category>Blog Update</category>
-      </categories>
       <tags>
         <tag>Blog</tag>
       </tags>
@@ -144,58 +337,6 @@ And set the different regions like the figure shown below. It's my personal pref
       <tags>
         <tag>Music Sharing</tag>
         <tag>Pure Music</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Post Beautify by HTML</title>
-    <url>/2022/04/18/htmlcodes/</url>
-    <content><![CDATA[<h1>Why I Create This Post</h1>
-<p>Using Markdown can help us get a clear website without the knowledge of HTML. There’s still several shortages that Markdown’s functions are limited compared to HTML. I am also a beginner, so I just try to collect some useful codes for decorating my website pages.</p>
-<p>But firstly, we can see that quoting by Markdown syntax can beautify the page.</p>
-<h2 id="Quoting"><a class="header-anchor" href="#Quoting">🔗</a>Quoting</h2>
-<figure class="highlight markdown"><table><tbody><tr><td class="code"><pre><span class="line"><span class="quote">&gt; It's a quoting demonstration.</span></span><br></pre></td></tr></tbody></table></figure>
-<blockquote>
-<p>It’s a quoting demonstration.</p>
-</blockquote>
-<p>In the hexo-butterfly theme, the quotation has a blue background. It makes some contents from others distinct from your own ideas.</p>
-<h1>HTML</h1>
-<h2 id="Note-Flat"><a class="header-anchor" href="#Note-Flat">🔗</a>Note Flat</h2>
-<p>The next part is for introducing some colorful text boxes to beautify the website.</p>
-<h3 id="Original"><a class="header-anchor" href="#Original">🔗</a>Original</h3>
-<p>The original version is <code>class = note flat</code>.</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note flat"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-<div class="note flat"></div>
-<p>You can see grey (I think it’s grey) color ribbon appear after you execute your code.</p>
-<h3 id="Add-Text"><a class="header-anchor" href="#Add-Text">🔗</a>Add Text</h3>
-<p>Then let us increase some texts.</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World!<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-<div class="note flat"><p>Hello World!</p></div>
-<p>Actually, the result is quite similar to the Markdown quotation on its original renderer.</p>
-<h3 id="Change-Color"><a class="header-anchor" href="#Change-Color">🔗</a>Change Color</h3>
-<p>Let’s change the color of the text box.</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note blue flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello World! But in blue background.<span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-<div class="note blue flat"><p>Hello World! But in blue background.</p></div>
-<p>It looks better compared to the original version!</p>
-<h3 id="Add-Emoji-span-class-emoji-alias-smiling-face-with-three-hearts-style-fallback-src-https-github-githubassets-com-images-icons-emoji-unicode-1f970-png-v8-🥰-span"><a class="header-anchor" href="#Add-Emoji-span-class-emoji-alias-smiling-face-with-three-hearts-style-fallback-src-https-github-githubassets-com-images-icons-emoji-unicode-1f970-png-v8-🥰-span">🔗</a>Add Emoji <span class="emoji" alias="smiling_face_with_three_hearts" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f970.png?v8">🥰</span></h3>
-<p>We can still make more changes to it like add some emojis.</p>
-<figure class="highlight html"><table><tbody><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"note blue flat"</span>&gt;</span><span class="tag">&lt;<span class="name">p</span>&gt;</span><span class="emoji" alias="sunglasses" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png?v8">😎</span>Hello World in blue background with emoji.<span class="emoji" alias="cowboy_hat_face" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f920.png?v8">🤠</span><span class="tag">&lt;/<span class="name">p</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></tbody></table></figure>
-<div class="note blue flat"><p><span class="emoji" alias="sunglasses" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f60e.png?v8">😎</span>Hello World in blue background with emoji.<span class="emoji" alias="cowboy_hat_face" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f920.png?v8">🤠</span></p></div>
-<h3 id="Add-Icon"><a class="header-anchor" href="#Add-Icon">🔗</a>Add Icon</h3>
-<p>Alright, it seems to be the end of that part. However, did you notice the empty space between your beginning of text and the beginning of the text box. We can add a icon here.</p>
-<div class="note green icon flat"><i class="note-icon fas fa-rocket"></i><p>我牛吗</p></div>
-<div class="note orange icon flat"><i class="note-icon fas fa-magic"></i><p>你可以通過右下角的 <strong>簡</strong> 按鈕切換為簡體顯示</p></div>
-<div class="note red icon flat"><i class="note-icon fa-brands fa-github"></i><p><span class="emoji" alias="star_struck" style="" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f929.png?v8">🤩</span>升級方法：在主題目錄下，運行 <code>git pull</code></p></div>
-<div class="note red icon flat"><i class="note-icon fa-solid fa-circle-exclamation"></i><p>升級方法：在主題目錄下，運行 <code>git pull</code></p></div>
-<div class="note purple icon flat"><i class="note-icon fa-solid fa-apple-whole"></i><p>升級方法：在主題目錄下，運行 <code>git pull</code></p></div>
-<div class="note pink icon flat"><i class="note-icon fa-solid fa-anchor"></i><p>升級方法：在主題目錄下，運行 <code>git pull</code></p></div>
-<div class="note purple icon flat"><i class="note-icon fa-solid fa-check"></i><p>升級方法：在主題目錄下，運行 <code>git pull</code></p></div>
-<div class="note info flat"><p>升級方法：在主題目錄下，運行 <code>git pull</code></p></div>
-<div class="alert alert-primary" role="alert"><p>A simple primary alert—check it out!</p></div>
-<div class="note warning flat"><p>不要在標題裏使用 mathjax 語法，toc 目錄不一定能正確顯示 mathjax，可能顯示 mathjax 代碼</p></div>
-<div class="note default flat"><p>default 提示塊標籤</p></div>
-]]></content>
-      <tags>
-        <tag>Blog</tag>
       </tags>
   </entry>
 </search>
