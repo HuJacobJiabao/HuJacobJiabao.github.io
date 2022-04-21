@@ -11,6 +11,15 @@
   </url>
   
   <url>
+    <loc>https://hujacobjiabao.github.io/2022/04/21/hello-world/</loc>
+    
+    <lastmod>2022-04-21</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://hujacobjiabao.github.io/2022/04/16/blender-python-meshing-1/</loc>
     
     <lastmod>2022-04-20</lastmod>
@@ -56,15 +65,6 @@
   </url>
   
   <url>
-    <loc>https://hujacobjiabao.github.io/2022/04/14/hello-world/</loc>
-    
-    <lastmod>2022-04-14</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://hujacobjiabao.github.io/categories/index.html</loc>
     
     <lastmod>2022-04-14</lastmod>
@@ -83,7 +83,14 @@
 
   
   <url>
-    <loc>https://hujacobjiabao.github.io/tags/Blog/</loc>
+    <loc>https://hujacobjiabao.github.io/tags/Music-Sharing/</loc>
+    <lastmod>2022-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hujacobjiabao.github.io/tags/Pure-Music/</loc>
     <lastmod>2022-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -111,27 +118,13 @@
   </url>
   
   <url>
-    <loc>https://hujacobjiabao.github.io/tags/Music-Sharing/</loc>
-    <lastmod>2022-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hujacobjiabao.github.io/tags/Pure-Music/</loc>
+    <loc>https://hujacobjiabao.github.io/tags/Blog/</loc>
     <lastmod>2022-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
 
-  
-  <url>
-    <loc>https://hujacobjiabao.github.io/categories/Blender/</loc>
-    <lastmod>2022-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>https://hujacobjiabao.github.io/categories/Music/</loc>
@@ -141,7 +134,14 @@
   </url>
   
   <url>
-    <loc>https://hujacobjiabao.github.io/categories/Blog-Update/</loc>
+    <loc>https://hujacobjiabao.github.io/categories/Blender/</loc>
+    <lastmod>2022-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hujacobjiabao.github.io/categories/Blog/</loc>
     <lastmod>2022-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
