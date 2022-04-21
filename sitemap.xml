@@ -90,20 +90,6 @@
   </url>
   
   <url>
-    <loc>https://hujacobjiabao.github.io/tags/Music-Sharing/</loc>
-    <lastmod>2022-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://hujacobjiabao.github.io/tags/Pure-Music/</loc>
-    <lastmod>2022-04-21</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://hujacobjiabao.github.io/tags/Blender/</loc>
     <lastmod>2022-04-21</lastmod>
     <changefreq>weekly</changefreq>
@@ -124,10 +110,24 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://hujacobjiabao.github.io/tags/Music-Sharing/</loc>
+    <lastmod>2022-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://hujacobjiabao.github.io/tags/Pure-Music/</loc>
+    <lastmod>2022-04-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
-    <loc>https://hujacobjiabao.github.io/categories/Blog-Update/</loc>
+    <loc>https://hujacobjiabao.github.io/categories/Blender/</loc>
     <lastmod>2022-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -141,7 +141,7 @@
   </url>
   
   <url>
-    <loc>https://hujacobjiabao.github.io/categories/Blender/</loc>
+    <loc>https://hujacobjiabao.github.io/categories/Blog-Update/</loc>
     <lastmod>2022-04-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
